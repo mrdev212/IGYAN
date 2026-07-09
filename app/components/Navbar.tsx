@@ -1,8 +1,7 @@
 
 "use client";
+import Image from "next/image";
 import Link from "next/link";
-
-
 import { useState } from "react";
 
 export default function Navbar() {
@@ -32,9 +31,14 @@ export default function Navbar() {
               <Link className="flex items-center gap-stack-md hover:opacity-90 transition-opacity" href="/">
                   <div className="relative bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg w-10 h-10 md:w-12 md:h-12 overflow-hidden flex items-center justify-center shrink-0"
                       id="header-logo-container">
-                      <img alt="IGYAN AI Logo" className="h-10 w-auto md:h-12 transition-opacity duration-300"
-                          src="/image.webp"
-                           />
+                      <Image
+                        alt="IGYAN AI Logo"
+                        className="object-contain p-1 transition-opacity duration-300"
+                        src="/image.webp"
+                        fill
+                        priority
+                        sizes="48px"
+                      />
                   </div>
                   <span
                       className="font-headline-md text-headline-md font-bold text-trust-blue dark:text-white transition-colors">IGYAN AI</span>
@@ -67,11 +71,11 @@ export default function Navbar() {
                                             Personalized learning & growth</p>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <Link href="/features/students/paths" passHref
+                                        <Link href="/features/students/paths"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Personalized Paths</Link>
-                                        <Link href="/features/students/paths#career-mapping" passHref
+                                        <Link href="/features/students/paths#career-mapping"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Career Mapping</Link>
-                                        <Link href="/features/students/paths#venture-ready" passHref
+                                        <Link href="/features/students/paths#venture-ready"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Venture Ready</Link>
                                     </div>
                                 </div>
@@ -90,11 +94,11 @@ export default function Navbar() {
                                             Automation & mentoring tools</p>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <Link href="/features/teachers/lessons" passHref
+                                        <Link href="/features/teachers/lessons"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Lesson Planning</Link>
-                                        <Link href="/features/teachers/lessons#admin-automation" passHref
+                                        <Link href="/features/teachers/lessons#admin-automation"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Admin Automation</Link>
-                                        <Link href="/features/teachers/lessons#mentor-bots" passHref
+                                        <Link href="/features/teachers/lessons#mentor-bots"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Mentor Bots</Link>
                                     </div>
                                 </div>
@@ -113,11 +117,11 @@ export default function Navbar() {
                                             Real-time progress insights</p>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <Link href="/features/parents/insights" passHref
+                                        <Link href="/features/parents/insights"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Progress Insights</Link>
-                                        <Link href="/features/parents/insights#growth-tracking" passHref
+                                        <Link href="/features/parents/insights#growth-tracking"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Growth Tracking</Link>
-                                        <Link href="/features/parents/insights#communication" passHref
+                                        <Link href="/features/parents/insights#communication"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Communication</Link>
                                     </div>
                                 </div>
@@ -136,11 +140,11 @@ export default function Navbar() {
                                             Data-driven management</p>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <Link href="/features/institutions/campus" passHref
+                                        <Link href="/features/institutions/campus"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Campus Management</Link>
-                                        <Link href="/features/institutions/campus#global-collaboration" passHref
+                                        <Link href="/features/institutions/campus#global-collaboration"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Global Collaboration</Link>
-                                        <Link href="/features/institutions/campus#resource-optimization" passHref
+                                        <Link href="/features/institutions/campus#resource-optimization"
                                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400 transition-colors">Resource Optimization</Link>
                                     </div>
                                 </div>
@@ -173,8 +177,8 @@ export default function Navbar() {
             <div className="flex items-center gap-stack-md">
                 {/* Theme Controller Selector removed */}                <Link className="hidden md:block text-trust-blue dark:text-indigo-400 font-label-md text-label-md px-6 py-2 rounded-full hover:bg-surface-container-low dark:hover:bg-slate-900 transition-all"
                     href="/login">Log in</Link>
-                <a className="bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 px-5 py-2 md:px-6 md:py-2.5 rounded-full font-label-md text-label-md shadow-sm active:scale-95 hover:bg-opacity-95 transition-all"
-                    href="https://calendar.google.com/calendar/u/7/r?pli=1" target="_blank" rel="noopener noreferrer">Book-Demo</a>
+                <Link className="bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 px-5 py-2 md:px-6 md:py-2.5 rounded-full font-label-md text-label-md shadow-sm active:scale-95 hover:bg-opacity-95 transition-all"
+                    href="/contact">Book Demo</Link>
 
                 {/* Mobile Menu Toggle Button */}
                 <button id="mobile-menu-btn" type="button"
@@ -205,13 +209,13 @@ export default function Navbar() {
                         <Link href="/#features" 
                             className="font-body-md text-body-md text-slate-700 dark:text-slate-300 hover:text-trust-blue dark:hover:text-indigo-400">Core
                             Features</Link>
-                        <Link href="/features/students/paths" passHref
+                        <Link href="/features/students/paths"
                             className="font-body-md text-body-md text-slate-600 dark:text-slate-400">For Students</Link>
-                        <Link href="/features/teachers/lessons" passHref
+                        <Link href="/features/teachers/lessons"
                             className="font-body-md text-body-md text-slate-600 dark:text-slate-400">For Teachers</Link>
-                        <Link href="/features/parents/insights" passHref
+                        <Link href="/features/parents/insights"
                             className="font-body-md text-body-md text-slate-600 dark:text-slate-400">For Parents</Link>
-                        <Link href="/features/institutions/campus" passHref
+                        <Link href="/features/institutions/campus"
                             className="font-body-md text-body-md text-slate-600 dark:text-slate-400">For Institutions</Link>
                     </div>
                 </div>
@@ -227,8 +231,8 @@ export default function Navbar() {
                 <div className="flex flex-col gap-3 pt-4">
                     <Link className="text-center text-trust-blue dark:text-indigo-400 font-label-md text-label-md py-3 rounded-full border border-outline-variant/40 dark:border-slate-800 hover:bg-surface-container-low dark:hover:bg-slate-900 transition-all"
                         href="/login">Log in</Link>
-                    <a className="text-center bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 py-3 rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 hover:bg-opacity-95 transition-all"
-                        href="https://calendar.google.com/calendar/u/7/r?pli=1" target="_blank" rel="noopener noreferrer">Book-Demo</a>
+                    <Link className="text-center bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 py-3 rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 hover:bg-opacity-95 transition-all"
+                        href="/contact">Book Demo</Link>
                 </div>
             </div>
         </div>

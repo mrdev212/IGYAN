@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 interface ImageWithSkeletonProps {
@@ -7,6 +8,8 @@ interface ImageWithSkeletonProps {
   alt: string;
   className?: string;
   wrapperClassName?: string;
+  priority?: boolean;
+  sizes?: string;
 }
 
 export default function ImageWithSkeleton({
@@ -14,6 +17,8 @@ export default function ImageWithSkeleton({
   alt,
   className = "",
   wrapperClassName = "",
+  priority = false,
+  sizes = "100vw",
 }: ImageWithSkeletonProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -27,9 +32,12 @@ export default function ImageWithSkeleton({
       )}
       
       {/* Actual Image */}
-      <img
+      <Image
         src={src}
         alt={alt}
+        fill
+        sizes={sizes}
+        priority={priority}
         onLoad={() => setIsLoaded(true)}
         className={`${className} transition-opacity duration-500 ${
           isLoaded ? "opacity-100" : "opacity-0"

@@ -1,6 +1,14 @@
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'Learn how IGYAN AI is building an AI-native education operating system for students, teachers, parents, and institutions.',
+};
 
 export default function Page() {
   return (
@@ -26,8 +34,11 @@ export default function Page() {
 
             {/* Background Image Overlay with Skeleton */}
             <div className="absolute inset-0 z-0 overflow-hidden bg-slate-900" id="hero-bg-container">
-                <img alt="Futuristic university campus at dawn" className="w-full h-full object-cover opacity-20 mix-blend-overlay transition-opacity duration-700" 
+                <Image alt="Futuristic university campus at dawn" className="object-cover opacity-20 mix-blend-overlay transition-opacity duration-700" 
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB2kzjFT4zdXIyIQzYIaQoip9frhxdMXIuJ08_72bpDije92JwFc0piLPxQUl_jRkfEtw8i2twBOt0R2xpNQxTUllWT4vMAyK5fkvW8F3wIL8ZGKcdsSDBpSLJTfYMl4Yx6gufpUaWVsI21j_0HXBLS5LDNSHR9LU-yAtWfMryRwaq-lY4T98df5S3AcB51DFdggnm-5CnAUTkncFM1J_ccGzjEzEEDYMjiNKVLX3QQPBnSz9h088c90SWcH0lEmYNMwBftTjXTWA"
+                    fill
+                    priority
+                    sizes="100vw"
                      />
             </div>
 
@@ -44,12 +55,12 @@ export default function Page() {
                     </h1>
                     {/* Subheadline */}
                     <p className="font-body-lg text-body-lg text-indigo-100 dark:text-slate-300 mb-10 leading-relaxed">
-                        We are building the world's first AI-native operating system for schools. IGYAN AI bridges the gap between traditional institutions and the rapidly evolving demands of the global workforce, ensuring every student has a personalized path to success.
+                        We are building the world&apos;s first AI-native operating system for schools. IGYAN AI bridges the gap between traditional institutions and the rapidly evolving demands of the global workforce, ensuring every student has a personalized path to success.
                     </p>
                     <div className="flex flex-wrap gap-4">
-                        <a href="#story" className="bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 px-8 py-4 rounded-full font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <Link href="/about#story" className="bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 px-8 py-4 rounded-full font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
                             Learn More <span className="material-symbols-outlined animate-bounce">arrow_downward</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -66,7 +77,7 @@ export default function Page() {
                                 IGYAN AI began with a simple but profound observation: while the world was being transformed by technology, the foundational systems of education remained largely unchanged. We saw students graduating into an AI-driven economy with tools from a pre-digital era.
                             </p>
                             <p>
-                                Our journey led to the development of <span className="text-trust-blue dark:text-indigo-400 font-semibold">Sudarshan AI</span>, a sophisticated copilot ecosystem designed specifically for the educational landscape. Named after the symbolic wheel of wisdom and protection, Sudarshan AI isn't just an assistant—it's a lifelong learning companion that evolves with the user.
+                                Our journey led to the development of <span className="text-trust-blue dark:text-indigo-400 font-semibold">Sudarshan AI</span>, a sophisticated copilot ecosystem designed specifically for the educational landscape. Named after the symbolic wheel of wisdom and protection, Sudarshan AI isn&apos;t just an assistant. It&apos;s a lifelong learning companion that evolves with the user.
                             </p>
                             <p>
                                 Today, IGYAN AI serves as the operating system for forward-thinking institutions, turning classrooms into incubators for entrepreneurship, creativity, and technical mastery.
@@ -77,18 +88,24 @@ export default function Page() {
                         <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
                             <div className="flex -space-x-3">
                                 <div className="w-12 h-12 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200 dark:bg-slate-800 overflow-hidden relative" id="founder1-container">
-                                    <img alt="Female tech founder" className="w-full h-full object-cover transition-opacity duration-300" 
+                                    <Image alt="Female tech founder" className="object-cover transition-opacity duration-300" 
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuApYcAsz920iT3ZLiNwbpcASGTlRl7ZXig2GfYdv90jt85zQ5blh34nZA5U6izjkuvzpR7r2K_wN6nG9eNI6gBxpOZijLKkXnUES02D2WF1E3DZeaNwbZ-BqycXWvz7M8qW0IcZI4dlot2S5HhyNdiv5b5XEqVvEcAObDhu9WVfAht5Ev0IF42Ncdq5cNNhywM7HU4wrZb8IkXs1tQSyZdNMunT05jBPzOAQFivJbtbmaKYE5_-i3psVvsjYajn-d_ODe8WCcCMN7Q"
+                                        fill
+                                        sizes="48px"
                                          />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200 dark:bg-slate-800 overflow-hidden relative" id="founder2-container">
-                                    <img alt="Male data scientist founder" className="w-full h-full object-cover transition-opacity duration-300" 
+                                    <Image alt="Male data scientist founder" className="object-cover transition-opacity duration-300" 
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg4VwGlMwTPAR82Fdh6cXxVIisO6etFjtz8_4kSqfOW6oHSWTigRlXxcm8Sf-RVDUbYqIoRGtLwsMo-2_DGVHN1dXsUwvT0iYW-wf9tYaLdDwVUtL_wFdvAzhvMwfJbaKpOtxhOMnN72uYBGj8ZV5siyRsAfxZwdZMVlw1D41x1K5fpmnt85kbtEocnqhRToQdO9QlcK-NNnElTl4s3N66-V7TH_WE-wb8u5S5lk6h0Jb9AieaHJbKNRHsJRjUkoY-IO4wCPCJNOU"
+                                        fill
+                                        sizes="48px"
                                          />
                                 </div>
                                 <div className="w-12 h-12 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200 dark:bg-slate-800 overflow-hidden relative" id="founder3-container">
-                                    <img alt="Young entrepreneur founder" className="w-full h-full object-cover transition-opacity duration-300" 
+                                    <Image alt="Young entrepreneur founder" className="object-cover transition-opacity duration-300" 
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnGwYKK1HQ4uZscfoJnmybWAFySfeIze5PcGw_3tILsd87A9HBDGzWTvxGk_1XIfUyvKcupMh2tg0alfo7qSw8itxidO5D9hFvnaEQGspx_VIJikWVKA-IVECRcHz3uCPEBQ1ZNsGSW_2Fy6piZmUcPoJX8b-w7ZxIZYxdSWlzbm8LpOIvqHgpBGvz72PbNB26zP4BtKBACiR9bgFH354ltJj-zRw_vV-cN9DQGBAa-zwHHLT_45FVMVQAQQ10pbnwPLlcRxFoHtc"
+                                        fill
+                                        sizes="48px"
                                          />
                                 </div>
                             </div>
@@ -100,8 +117,10 @@ export default function Page() {
                     <div className="relative scroll-reveal" >
                         <div className="ai-border p-4 rounded-3xl shadow-2xl dark:shadow-[0_0_50px_-12px_rgba(99,102,241,0.25)]">
                             <div className="relative aspect-square rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-900" id="sphere-img-container">
-                                <img alt="Glowing Ethereal Blue Sphere representing Sudarshan AI" className="w-full h-full object-cover transition-opacity duration-500" 
+                                <Image alt="Glowing Ethereal Blue Sphere representing Sudarshan AI" className="object-cover transition-opacity duration-500" 
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvk5CnG4TVjAFG8KIzWx6e6PICTeCVXZLpZSe_RneWmTIisGpSXAWT36ncNgAprslYWKOkDt3vAU8S6ej_tKDbEPYuO3PNCOnXBFcoVC-kdj6JlXDssoNePsnC4n_wjLROEE2tyFmnPmzxhFZuAat8qWdtzSPPdjRBugfz-lZYxhxc03v53dEHEzzeun_yEkoDpGeHhUnoJHQgIgfro9bgA2VSavalMiK_7Ynygyh6kj5fXap4Pu2vD6gLFAREa1MAm0GLlCkY8r8"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 560px"
                                      />
                             </div>
                         </div>
@@ -140,7 +159,7 @@ export default function Page() {
                         </div>
                         <h3 className="font-headline-md text-headline-md text-trust-blue dark:text-white mb-4">Innovation</h3>
                         <p className="font-body-md text-body-md text-on-surface-variant dark:text-slate-400 leading-relaxed">
-                            We don't just follow trends; we set them. By integrating cutting-edge AI directly into the learning workflow, we create new possibilities for personalized education.
+                            We don&apos;t just follow trends; we set them. By integrating cutting-edge AI directly into the learning workflow, we create new possibilities for personalized education.
                         </p>
                     </div>
                     {/* Value 3: Impact */}
@@ -180,8 +199,10 @@ export default function Page() {
                     <div className="lg:col-span-5 scroll-reveal" >
                         <div className="glass-card p-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
                             <div className="w-full aspect-[4/5] bg-slate-900 rounded-2xl overflow-hidden relative" id="vision-img-container">
-                                <img alt="Student wearing AR learning headset looking at holographic map of career pathways" className="w-full h-full object-cover transition-opacity duration-700" 
+                                <Image alt="Student wearing AR learning headset looking at holographic map of career pathways" className="object-cover transition-opacity duration-700" 
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWEzflw_QdfcFXDAg5s3FM6M_9esE1QKbHa9KitDwkHsGbFm1sOYKnYx5_rs8WBTu1Ra4dak3SBOw4AsdL-ynFG65b4YR1BDTE5y9nWlvixsSgtrAyDP83iOc1Ar0Mpnm7XI6dNsmBkLPDe60TM7wwvr734EB0ENL498AO6pkm8BXeuU9GwFf7PUSsCpyZ6xyQ1OdXFBJzPODN4NdVze1tus2tT-6lBRAZSXBWqXi1ZCWIjEvkGnaWC8xeswx4407dxbmQ1z_szD4"
+                                    fill
+                                    sizes="(max-width: 1024px) 100vw, 420px"
                                      />
                             </div>
                         </div>
@@ -226,11 +247,6 @@ export default function Page() {
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
         <a href="mailto:igyan.ai.team@gmail.com" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700" title="Email Us">
             <span className="material-symbols-outlined text-[28px]">mail</span>
-        </a>
-        <a href="https://wa.me/" target="_blank" className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all" title="Chat on WhatsApp">
-            <svg viewBox="0 0 24 24" className="w-8 h-8 fill-current">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
         </a>
     </div>
     

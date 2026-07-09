@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer
@@ -9,9 +10,13 @@ export default function Footer() {
                 <div className="flex items-center gap-3">
                     <div className="relative bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg w-10 h-10 overflow-hidden flex items-center justify-center shrink-0"
                         id="footer-logo-container">
-                        <img alt="IGYAN AI Logo" className="h-10 transition-opacity duration-300"
-                            src="/image.webp"
-                             />
+                        <Image
+                          alt="IGYAN AI Logo"
+                          className="object-contain p-1 transition-opacity duration-300"
+                          src="/image.webp"
+                          fill
+                          sizes="40px"
+                        />
                     </div>
                     <span
                         className="font-headline-md text-headline-md font-bold text-trust-blue dark:text-white transition-colors">IGYAN AI</span>
@@ -44,8 +49,8 @@ export default function Footer() {
                 <ul className="space-y-3">
                     <li><Link className="text-slate-600 dark:text-slate-400 font-body-md text-body-md hover:text-[#3B1595] dark:hover:text-white transition-all"
                             href="/login">Log in</Link></li>
-                    <li><a className="text-slate-600 dark:text-slate-400 font-body-md text-body-md hover:text-[#3B1595] dark:hover:text-white transition-all"
-                            href="https://calendar.google.com/calendar/u/7/r?pli=1" target="_blank" rel="noopener noreferrer">Book-Demo</a></li>
+                    <li><Link className="text-slate-600 dark:text-slate-400 font-body-md text-body-md hover:text-[#3B1595] dark:hover:text-white transition-all"
+                            href="/contact">Book Demo</Link></li>
                     <li><Link className="text-slate-600 dark:text-slate-400 font-body-md text-body-md hover:text-[#3B1595] dark:hover:text-white transition-all"
                             href="/contact">Partner with us</Link></li>
                 </ul>

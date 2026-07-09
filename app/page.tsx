@@ -54,7 +54,7 @@ export default function Home() {
                     <h1
                         className="font-headline-xl text-headline-xl md:text-[56px] text-[#1E1B4B] dark:text-white mb-6 leading-[1.1] max-w-4xl font-extrabold tracking-tight">
                         Find your <span
-                            className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-violet-400">"wow!"</span>
+                            className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-violet-400">&quot;wow!&quot;</span>
                         this school year with IGYAN AI
                     </h1>
                     {/* Subheadline */}
@@ -71,10 +71,10 @@ export default function Home() {
                             <span
                                 className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                         </a>
-                        <a href="#features"
+                        <Link href="/#features"
                             className="border-2 border-trust-blue/20 dark:border-white/20 hover:border-trust-blue dark:hover:border-white text-trust-blue dark:text-white px-8 py-4 rounded-full font-label-md text-label-md font-semibold transition-all backdrop-blur-sm hover:-translate-y-0.5 transform">
                             Explore Platform
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -86,7 +86,9 @@ export default function Home() {
                             src="/student_engagement_hd.webp"
                             alt="IGYAN AI AI Classroom Showcase"
                             wrapperClassName="relative w-full overflow-hidden rounded-2xl bg-slate-200 dark:bg-slate-800 aspect-[1024/1024]"
-                            className="w-full h-auto rounded-2xl shadow-inner"
+                            className="object-cover rounded-2xl shadow-inner"
+                            priority
+                            sizes="(max-width: 768px) 100vw, 960px"
                         />
 
                         {/* Mini Interactive Overlay Badge */}
@@ -132,7 +134,7 @@ export default function Home() {
                         <h3 className="font-headline-md text-headline-md text-trust-blue dark:text-white mb-4">Personalized
                             Learning</h3>
                         <p className="font-body-md text-body-md text-on-surface-variant dark:text-slate-400 mb-6">
-                            Tailored curricula that adapt to every student's pace, interests, and learning style using
+                            Tailored curricula that adapt to every student&apos;s pace, interests, and learning style using
                             advanced diagnostic AI.
                         </p>
                         <ul className="space-y-3">
@@ -209,7 +211,8 @@ export default function Home() {
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVJzfp-VDjUE3IqLOVIQWbG8LkC1-5eagRne71KDjqHFYqYZx35zZIPiqvgZAcFZrGlDj8SnF2kDYeyze-fGYaPjpkGDbzbEX8PULNluJSWVPor37nJFiHNafKjECzkHwm9Hn-cQodJOP-eG7kmQDkxifKU2CKkSfLsXEHNFN8bD1PmFk4iRLdtlVH5u9XPQuYtuk9-mIf8jOax0DD22zTm0IFWc0Vq6HzLwYVmUK5eVd-HuM6LBxide7jwOL_CL8CJ2bxWrUloEY"
                                 alt="Sudarshan AI Dashboard UI"
                                 wrapperClassName="relative w-full overflow-hidden rounded-[1.25rem] bg-slate-200 dark:bg-slate-800 aspect-[16/10]"
-                                className="w-full h-auto rounded-[1.25rem] shadow-md"
+                                className="object-cover rounded-[1.25rem] shadow-md"
+                                sizes="(max-width: 1024px) 100vw, 720px"
                             />
                             <div
                                 className="absolute inset-2.5 rounded-[1.25rem] bg-gradient-to-t from-trust-blue/15 dark:from-slate-950/40 to-transparent pointer-events-none z-10">
@@ -256,7 +259,7 @@ export default function Home() {
                                         Student Mentor Bot</h4>
                                     <p className="font-body-md text-body-md text-slate-500 dark:text-slate-400">Real-time
                                         academic support, concept explanation, and career guidance tailored to each
-                                        student's unique profile.</p>
+                                        student&apos;s unique profile.</p>
                                 </div>
                             </div>
                             {/* Feature 3 */}
@@ -323,9 +326,11 @@ export default function Home() {
                     <div className="group flex flex-col glass-card overflow-hidden cursor-pointer"
                         >
                         <div className="h-56 overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
-                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <ImageWithSkeleton src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                 alt="Rural Education AI"
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+                                wrapperClassName="h-full w-full"
+                                sizes="(max-width: 1024px) 100vw, 380px"
+                                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
                             <div
                                 className="absolute top-4 left-4 bg-indigo-500 text-white px-3 py-1 rounded-full text-[11px] font-bold tracking-wide shadow-md">
                                 Indian Education</div>
@@ -355,9 +360,11 @@ export default function Home() {
                     <div className="group flex flex-col glass-card overflow-hidden cursor-pointer"
                         >
                         <div className="h-56 overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
-                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <ImageWithSkeleton src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                 alt="EdTech Trends"
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+                                wrapperClassName="h-full w-full"
+                                sizes="(max-width: 1024px) 100vw, 380px"
+                                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
                             <div
                                 className="absolute top-4 left-4 bg-[#00A3FF] text-white px-3 py-1 rounded-full text-[11px] font-bold tracking-wide shadow-md">
                                 EdTech Trends</div>
@@ -387,9 +394,11 @@ export default function Home() {
                     <div className="group flex flex-col glass-card overflow-hidden cursor-pointer"
                         >
                         <div className="h-56 overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            <ImageWithSkeleton src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                 alt="NEP 2020"
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+                                wrapperClassName="h-full w-full"
+                                sizes="(max-width: 1024px) 100vw, 380px"
+                                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
                              <div
                                 className="absolute top-4 left-4 bg-trust-blue text-white px-3 py-1 rounded-full text-[11px] font-bold tracking-wide shadow-md">
                                 NEP 2020</div>
@@ -456,11 +465,6 @@ export default function Home() {
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
         <a href="mailto:igyan.ai.team@gmail.com" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700" title="Email Us">
             <span className="material-symbols-outlined text-[28px]">mail</span>
-        </a>
-        <a href="https://wa.me/" target="_blank" className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all" title="Chat on WhatsApp">
-            <svg viewBox="0 0 24 24" className="w-8 h-8 fill-current">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
         </a>
     </div>
     

@@ -15,8 +15,49 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "IGYAN AI - Talent in Motion",
-  description: "The AI-native education operating system",
+  metadataBase: new URL("https://igyan.ai"),
+  title: {
+    default: "IGYAN AI | AI-Native Education Operating System",
+    template: "%s | IGYAN AI",
+  },
+  description:
+    "IGYAN AI helps schools deliver personalized learning, career pathways, and operational intelligence through an AI-native education platform.",
+  keywords: [
+    "IGYAN AI",
+    "education AI",
+    "school management platform",
+    "personalized learning",
+    "career pathways",
+    "AI for schools",
+  ],
+  openGraph: {
+    title: "IGYAN AI | AI-Native Education Operating System",
+    description:
+      "Personalized learning, career pathways, and school operations in one AI-native platform.",
+    url: "https://igyan.ai",
+    siteName: "IGYAN AI",
+    images: [
+      {
+        url: "/student_engagement_hd.webp",
+        width: 1024,
+        height: 1024,
+        alt: "IGYAN AI classroom and student engagement platform",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IGYAN AI | AI-Native Education Operating System",
+    description:
+      "AI-native software for personalized learning, student growth, and school transformation.",
+    images: ["/student_engagement_hd.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +68,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
