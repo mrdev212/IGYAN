@@ -83,7 +83,7 @@ export default function Home() {
                     <div
                         className="relative bg-white/60 dark:bg-slate-800/60 backdrop-blur-xl p-4 rounded-[2rem] shadow-[0_30px_65px_-15px_rgba(0,71,171,0.18)] border border-white/50 dark:border-slate-800/60 transform hover:scale-[1.01] transition-all duration-500">
                         <ImageWithSkeleton
-                            src="/student_engagement_hd.png"
+                            src="/student_engagement_hd.webp"
                             alt="IGYAN AI AI Classroom Showcase"
                             wrapperClassName="relative w-full overflow-hidden rounded-2xl bg-slate-200 dark:bg-slate-800 aspect-[1024/1024]"
                             className="w-full h-auto rounded-2xl shadow-inner"
@@ -103,46 +103,6 @@ export default function Home() {
                             </div>
                             <p className="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 leading-snug">
                                 Real-time engagement tracking powered by Sudarshan AI.</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Credentials / Trust Ribbon */}
-                <div className="mt-16 border-t border-slate-200/50 dark:border-slate-800/60 pt-8 max-w-5xl mx-auto">
-                    <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-6">
-                        Recognized Credential Integrations &amp; Partnerships
-                    </p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
-                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
-                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">rocket_launch</span>
-                            <div className="text-left">
-                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Recognized By</p>
-                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">DPIIT Startup India</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
-                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">lock_person</span>
-                            <div className="text-left">
-                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Government Sync</p>
-                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">DigiLocker Integrated</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
-                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">school</span>
-                            <div className="text-left">
-                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Verified Partner</p>
-                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">Google for Education</p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
-                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">verified</span>
-                            <div className="text-left">
-                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Scale &amp; Trust</p>
-                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">500+ Campuses Live</p>
-                            </div>
                         </div>
                     </div>
                 </div>

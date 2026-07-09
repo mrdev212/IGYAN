@@ -33,7 +33,7 @@ export default function Navbar() {
                   <div className="relative bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg w-10 h-10 md:w-12 md:h-12 overflow-hidden flex items-center justify-center shrink-0"
                       id="header-logo-container">
                       <img alt="IGYAN AI Logo" className="h-10 w-auto md:h-12 transition-opacity duration-300"
-                          src="/image.png"
+                          src="/image.webp"
                            />
                   </div>
                   <span
