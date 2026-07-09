@@ -40,7 +40,7 @@ export default function Page() {
     {/* TopNavBar */}
     <Navbar />
 
-    <main className="pt-20">
+    <main className="pt-28 md:pt-32">
         {/* Hero Intro Section */}
         <section className="relative bg-gradient-to-b from-[#3B1595] via-[#2F1078] to-[#0A051C] dark:from-[#0E0F1E] dark:via-[#191535] dark:to-[#0A051C] text-white py-20 overflow-hidden transition-colors duration-300">
             {/* Sparks/Stars */}

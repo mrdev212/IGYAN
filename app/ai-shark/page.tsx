@@ -30,7 +30,7 @@ export default function AiSharkPage() {
     <>
       <Navbar />
 
-      <main className="pt-20 max-w-[1120px] mx-auto px-margin-desktop">
+      <main className="pt-28 md:pt-32 max-w-[1120px] mx-auto px-margin-desktop">
         <section className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div className="flex flex-col gap-6">
             <div className="mb-2 animate-bounce duration-1000">

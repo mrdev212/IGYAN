@@ -10,19 +10,35 @@ export default function Navbar() {
   const [mobileFeaturesOpen, setMobileFeaturesOpen] = useState(false);
 
   return (
-    <nav
-        className="fixed top-0 w-full bg-white/75 dark:bg-slate-950/80 backdrop-blur-xl z-50 border-b border-white/10 dark:border-slate-800/50 shadow-[0_2px_20px_-10px_rgba(0,71,171,0.05)] transition-colors duration-300">
-        <div className="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
-            <Link className="flex items-center gap-stack-md hover:opacity-90 transition-opacity" href="/">
-                <div className="relative bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg w-10 h-10 md:w-12 md:h-12 overflow-hidden flex items-center justify-center shrink-0"
-                    id="header-logo-container">
-                    <img alt="IGYAN AI Logo" className="h-10 w-auto md:h-12 transition-opacity duration-300"
-                        src="/image.png"
-                         />
-                </div>
-                <span
-                    className="font-headline-md text-headline-md font-bold text-trust-blue dark:text-white transition-colors">IGYAN AI</span>
-            </Link>
+    <div className="fixed top-0 left-0 w-full z-50">
+      {/* Top Announcement Bar */}
+      <div className="w-full text-white h-10 md:h-12 flex items-center justify-center px-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-md">
+        <div className="flex items-center gap-2 text-xs md:text-sm font-semibold tracking-wide">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span>India&apos;s #1 AI-Powered Operating System for Schools &amp; Colleges</span>
+          <Link href="/contact" className="underline ml-2 hover:text-indigo-200 transition-colors">
+            Book a Free Demo &rarr;
+          </Link>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
+      <nav
+          className="w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800/50 shadow-[0_2px_20px_-10px_rgba(0,71,171,0.05)] transition-colors duration-300">
+          <div className="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+              <Link className="flex items-center gap-stack-md hover:opacity-90 transition-opacity" href="/">
+                  <div className="relative bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg w-10 h-10 md:w-12 md:h-12 overflow-hidden flex items-center justify-center shrink-0"
+                      id="header-logo-container">
+                      <img alt="IGYAN AI Logo" className="h-10 w-auto md:h-12 transition-opacity duration-300"
+                          src="/image.png"
+                           />
+                  </div>
+                  <span
+                      className="font-headline-md text-headline-md font-bold text-trust-blue dark:text-white transition-colors">IGYAN AI</span>
+              </Link>
             {/* Desktop Links */}
             <div className="hidden md:flex items-center gap-8">
                 <div className="relative group py-2" id="features-menu-container">
@@ -216,6 +232,7 @@ export default function Navbar() {
                 </div>
             </div>
         </div>
-    </nav>
+      </nav>
+    </div>
   );
 }

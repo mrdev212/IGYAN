@@ -11,10 +11,10 @@ export default function Home() {
     {/* TopNavBar */}
     <Navbar />
 
-    <main className="pt-20">
+    <main className="pt-28 md:pt-32">
         {/* Hero Section Redesign (Inspired by MagicSchool.ai) */}
         <section
-            className="relative overflow-hidden bg-gradient-to-b from-[#FFF5EC] via-[#ECE5FF] to-[#3B1595] dark:from-[#0E0F1E] dark:via-[#191535] dark:to-[#0A051C] pt-12 md:pt-20 pb-16 transition-colors duration-300">
+            className="relative overflow-hidden bg-gradient-to-b from-[#FFF5EC] via-[#ECE5FF] to-[#3B1595] dark:from-[#0E0F1E] dark:via-[#191535] dark:to-[#0A051C] pt-16 md:pt-24 pb-16 transition-colors duration-300">
             {/* Background Sparks/Star Decor (Floating animation) */}
             <div
                 className="absolute left-6 md:left-12 top-1/4 hidden sm:block animate-float opacity-75 text-amber-500 dark:text-amber-400">
@@ -103,6 +103,46 @@ export default function Home() {
                             </div>
                             <p className="font-label-sm text-label-sm text-slate-500 dark:text-slate-400 leading-snug">
                                 Real-time engagement tracking powered by Sudarshan AI.</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Credentials / Trust Ribbon */}
+                <div className="mt-16 border-t border-slate-200/50 dark:border-slate-800/60 pt-8 max-w-5xl mx-auto">
+                    <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-6">
+                        Recognized Credential Integrations &amp; Partnerships
+                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
+                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">rocket_launch</span>
+                            <div className="text-left">
+                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Recognized By</p>
+                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">DPIIT Startup India</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
+                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">lock_person</span>
+                            <div className="text-left">
+                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Government Sync</p>
+                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">DigiLocker Integrated</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
+                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">school</span>
+                            <div className="text-left">
+                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Verified Partner</p>
+                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">Google for Education</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-2.5 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 dark:border-slate-800 shadow-sm hover:scale-[1.03] transition-all">
+                            <span className="material-symbols-outlined text-trust-blue dark:text-indigo-400">verified</span>
+                            <div className="text-left">
+                                <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-wider leading-none">Scale &amp; Trust</p>
+                                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">500+ Campuses Live</p>
+                            </div>
                         </div>
                     </div>
                 </div>

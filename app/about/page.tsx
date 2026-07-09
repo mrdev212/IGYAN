@@ -9,7 +9,7 @@ export default function Page() {
     {/* TopNavBar */}
     <Navbar />
 
-    <main className="pt-20">
+    <main className="pt-28 md:pt-32">
         {/* Section 1: Hero */}
         <section className="relative min-h-[640px] flex items-center overflow-hidden bg-gradient-to-b from-[#3B1595] via-[#2F1078] to-[#0A051C] dark:from-[#0E0F1E] dark:via-[#191535] dark:to-[#0A051C] text-white py-16 transition-colors duration-300">
             {/* Background Sparks/Star Decor (Floating animation) */}

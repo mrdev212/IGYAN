@@ -15,7 +15,7 @@ export default function Page() {
     {/* TopNavBar */}
     <Navbar />
 
-    <main className="relative pt-20">
+    <main className="relative pt-28 md:pt-32">
         {/* Background Atmosphere */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] pointer-events-none opacity-40 overflow-hidden">
             <div className="absolute top-[-100px] left-[-20%] w-[60%] h-[600px] bg-primary-fixed rounded-full blur-[120px] dark:bg-indigo-950/40"></div>
