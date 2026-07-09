@@ -10,7 +10,7 @@ export default function Navbar() {
   const [mobileFeaturesOpen, setMobileFeaturesOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50">
+    <div className="fixed top-0 left-0 w-full z-[9999]">
       {/* Top Announcement Bar */}
       <div className="w-full text-white h-10 md:h-12 flex items-center justify-center px-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-md">
         <div className="flex items-center gap-2 text-xs md:text-sm font-semibold tracking-wide">
