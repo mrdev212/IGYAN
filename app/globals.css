@@ -1,26 +1,232 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@config "../tailwind.config.ts";
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
+
+/* Restore Tailwind's container max-width scale after legacy spacing aliases. */
+.max-w-xs { max-width: 20rem; }
+.max-w-sm { max-width: 24rem; }
+.max-w-md { max-width: 28rem; }
+.max-w-lg { max-width: 32rem; }
+.max-w-xl { max-width: 36rem; }
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-6xl { max-width: 72rem; }
+.max-w-7xl { max-width: 80rem; }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(16px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(0, 71, 171, 0.08), 
+                inset 0 1px 1px rgba(255, 255, 255, 0.6);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 40px -15px rgba(0, 71, 171, 0.15),
+                inset 0 1px 2px rgba(255, 255, 255, 0.8);
+    transform: translateY(-6px);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 50px -12px rgba(0, 71, 171, 0.12),
+                inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.dark .glass-card {
+    background: rgba(15, 23, 42, 0.45);
+    border-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3),
+                inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.dark .glass-panel {
+    background: rgba(15, 23, 42, 0.8);
+    border-color: rgba(255, 255, 255, 0.07);
+}
+
+.azure-shadow {
+    box-shadow: 0 12px 34px rgba(0, 71, 171, 0.16);
+}
+
+.hover-lift {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -10px rgba(0, 123, 255, 0.15);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.ai-border {
+    position: relative;
+}
+.ai-border::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #00AEEF, #0047AB, #00AEEF);
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+.ai-border:hover::before {
+    opacity: 0.8;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    width: fit-content;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.pulse-ring {
+    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+@keyframes pulse-ring {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 174, 239, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(0, 174, 239, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 174, 239, 0); }
+}
+
+.peer:focus ~ .peer-focus\:top-2,
+.peer:not(:placeholder-shown) ~ .peer-focus\:top-2 {
+    top: 0.5rem;
+    font-size: 0.75rem;
+    color: #0047AB; /* trust-blue */
+}
+
+.dark .peer:focus ~ .peer-focus\:top-2,
+.dark .peer:not(:placeholder-shown) ~ .peer-focus\:top-2 {
+    color: #818cf8; /* indigo-400 */
+}
+
+.peer:focus ~ .peer-focus\:-translate-y-4,
+.peer:not(:placeholder-shown) ~ .peer-focus\:-translate-y-4 {
+    transform: translateY(-1rem) scale(0.85);
+    background-color: white;
+    padding: 0 4px;
+}
+
+.dark .peer:focus ~ .peer-focus\:-translate-y-4,
+.dark .peer:not(:placeholder-shown) ~ .peer-focus\:-translate-y-4 {
+    background-color: #0F172A; /* slate-900 */
+}
+
+/* AI Shark Page specific styles */
+.dark .azure-glass {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.azure-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+.shark-glow {
+    box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.08);
+}
+@keyframes pulse-ring-shark {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    100% { transform: scale(2.4); opacity: 0; }
+}
+.animate-pulse-ring {
+    animation: pulse-ring-shark 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+/* Custom Floating Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(-4deg); }
+}
+
+@keyframes float-reverse {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(12px) rotate(-3deg); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: float-slow 9s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+    animation: float-reverse 7s ease-in-out infinite;
+}
+
+/* Glow Effects */
+.glowing-primary {
+    position: relative;
+}
+.glowing-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0, 71, 171, 0.15) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+    transform: scale(1.2);
+}
+
+.glowing-orange {
+    position: relative;
+}
+.glowing-orange::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+    transform: scale(1.2);
+}
+
+/* Scroll reveal helper classes */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
