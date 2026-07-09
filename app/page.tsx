@@ -72,7 +72,7 @@ export default function Home() {
                                 className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                         </a>
                         <a href="#features"
-                            className="border-2 border-2 border-trust-blue/20 dark:border-white/20 hover:border-trust-blue dark:hover:border-white text-trust-blue dark:text-white px-8 py-4 rounded-full font-label-md text-label-md font-semibold transition-all backdrop-blur-sm">
+                            className="border-2 border-trust-blue/20 dark:border-white/20 hover:border-trust-blue dark:hover:border-white text-trust-blue dark:text-white px-8 py-4 rounded-full font-label-md text-label-md font-semibold transition-all backdrop-blur-sm hover:-translate-y-0.5 transform">
                             Explore Platform
                         </a>
                     </div>
