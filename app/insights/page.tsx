@@ -300,40 +300,6 @@ export default function Page() {
             </div>
         </section>
 
-        {/* Bento Stats Grid (Quick Insights) */}
-        <section className="px-gutter max-w-container-max mx-auto py-stack-lg scroll-reveal" >
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* Stat 1 */}
-                <div className="glass-panel rounded-3xl p-8 vibe-glow-cyan border-primary/10 dark:border-slate-800">
-                    <div className="flex justify-between items-start mb-6">
-                        <span className="material-symbols-outlined text-primary dark:text-indigo-400 text-4xl">trending_up</span>
-                        <span className="text-primary dark:text-indigo-400 font-label-xs text-label-xs bg-primary/10 dark:bg-indigo-950/40 px-2 py-1 rounded-md">+14.2%</span>
-                    </div>
-                    <h3 className="font-headline-md text-headline-md text-on-surface dark:text-white mb-2">Institutional ROI</h3>
-                    <p className="text-on-surface-variant dark:text-slate-400">Average increase in operational efficiency across partner schools in Q3 2024.</p>
-                </div>
-                {/* Stat 2 (Wide) */}
-                <div className="glass-panel rounded-3xl p-8 md:col-span-2 relative overflow-hidden vibe-glow-violet border-primary/10 dark:border-slate-800">
-                    <div className="absolute inset-0 data-grid opacity-50"></div>
-                    <div className="relative z-10 flex flex-col h-full justify-between">
-                        <div>
-                            <h3 className="font-headline-md text-headline-md text-on-surface dark:text-white mb-2">Market Sentiment Index</h3>
-                            <p className="text-on-surface-variant dark:text-slate-400 max-w-md">Real-time tracking of AI adoption readiness in the K-12 sector globally.</p>
-                        </div>
-                        <div className="mt-8 h-32 flex items-end gap-1">
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                            <div className="w-full bg-primary/20 dark:bg-indigo-600/20 border border-primary/10 dark:border-indigo-500/20 rounded-t-lg transition-all hover:bg-primary/40 dark:hover:bg-indigo-500/40" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         {/* White Papers & Market Reports Section */}
         <section className="bg-surface-container-low dark:bg-slate-900/30 py-stack-lg border-y border-outline-variant/20 dark:border-slate-800/60 scroll-reveal">
             <div className="px-gutter max-w-container-max mx-auto">
