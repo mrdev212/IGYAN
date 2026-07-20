@@ -17,8 +17,8 @@ export default function Navbar() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          <span>India&apos;s #1 AI-Powered Operating System for Schools &amp; Colleges</span>
-          <Link href="/contact" className="underline ml-2 hover:text-indigo-200 transition-colors">
+          <span>India&apos;s AI-Native Operating System for Schools &amp; Colleges</span>
+          <Link href="https://calendar.app.google/kzsNUC6w3tvkjLTs7" target="_blank" rel="noopener noreferrer" className="underline ml-2 hover:text-indigo-200 transition-colors">
             Book a Free Demo &rarr;
           </Link>
         </div>
@@ -178,7 +178,7 @@ export default function Navbar() {
                 {/* Theme Controller Selector removed */}                <Link className="hidden md:block text-trust-blue dark:text-indigo-400 font-label-md text-label-md px-6 py-2 rounded-full hover:bg-surface-container-low dark:hover:bg-slate-900 transition-all"
                     href="/login">Log in</Link>
                 <Link className="bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 px-5 py-2 md:px-6 md:py-2.5 rounded-full font-label-md text-label-md shadow-sm active:scale-95 hover:bg-opacity-95 transition-all"
-                    href="/contact">Book Demo</Link>
+                    href="https://calendar.app.google/kzsNUC6w3tvkjLTs7" target="_blank" rel="noopener noreferrer">Book Demo</Link>
 
                 {/* Mobile Menu Toggle Button */}
                 <button id="mobile-menu-btn" type="button"
@@ -232,7 +232,7 @@ export default function Navbar() {
                     <Link className="text-center text-trust-blue dark:text-indigo-400 font-label-md text-label-md py-3 rounded-full border border-outline-variant/40 dark:border-slate-800 hover:bg-surface-container-low dark:hover:bg-slate-900 transition-all"
                         href="/login">Log in</Link>
                     <Link className="text-center bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 py-3 rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 hover:bg-opacity-95 transition-all"
-                        href="/contact">Book Demo</Link>
+                        href="https://calendar.app.google/kzsNUC6w3tvkjLTs7" target="_blank" rel="noopener noreferrer">Book Demo</Link>
                 </div>
             </div>
         </div>

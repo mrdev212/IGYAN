@@ -7,7 +7,7 @@ const featureData = {
     title: "Institutions & Leaders",
     description: "Transforming campuses into intelligent learning ecosystems with comprehensive AI management.",
     features: [
-      { name: "Principal Sudarshan AI", desc: "Forecast admissions, manage compliance, and orchestrate school-wide OKRs." },
+      { name: "Principal Sudarshan AI", desc: "Forecast admissions, manage compliance, and orchestrate school-wide goals." },
       { name: "Institutional Innovation Hub", desc: "Virtual incubation for campus-wide innovation." },
       { name: "Smart Scheduler", desc: "AI Timetable & Smart Substitution scheduling." },
       { name: "Insights Dashboard", desc: "Executive dashboards for real-time telemetry." }
