@@ -170,9 +170,9 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
               </div>
               <label htmlFor="terms" className="ml-2 block text-sm text-slate-600 dark:text-slate-400">
                 I agree to the{' '}
-                <Link href="/contact" className="font-semibold text-trust-blue dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors">Terms of Service</Link>
+                <Link href="/terms" className="font-semibold text-trust-blue dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors">Terms of Service</Link>
                 {' '}and{' '}
-                <Link href="/contact" className="font-semibold text-trust-blue dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors">Privacy Policy</Link>.
+                <Link href="/privacy" className="font-semibold text-trust-blue dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors">Privacy Policy</Link>.
               </label>
             </div>
 
@@ -193,7 +193,7 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
       
       {/* Floating Contact Buttons */}
       <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-        <a href="mailto:igyan.ai.team@gmail.com" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700" title="Email Us">
+        <a href="/contact" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700" title="Contact Us">
           <span className="material-symbols-outlined text-[28px]">mail</span>
         </a>
         <a href="https://wa.me/917004201514" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all" title="Chat on WhatsApp">

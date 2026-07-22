@@ -407,7 +407,7 @@ export default function InstitutionsFeaturePage() {
 function FloatingContactButtons() {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-      <a href="mailto:igyan.ai.team@gmail.com" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline dark:border-slate-600-variant/30 dark:border-slate-700" title="Email Us">
+      <a href="/contact" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline dark:border-slate-600-variant/30 dark:border-slate-700" title="Contact Us">
         <span className="material-symbols-outlined text-[28px]">mail</span>
       </a>
       <a href="https://wa.me/917004201514" target="_blank" rel="noopener noreferrer" className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all" title="Chat on WhatsApp">
