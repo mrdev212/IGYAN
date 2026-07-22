@@ -22,6 +22,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/*
+ * Never show a Material Symbol's ligature source (for example, arrow_forward)
+ * before its font is ready. Opacity deliberately avoids overriding a parent
+ * menu's `visibility: hidden` state, so closed dropdown icons stay closed.
+ */
+html:not(.material-symbols-ready) .material-symbols-outlined {
+    opacity: 0;
+}
+
 /* Restore Tailwind's container max-width scale after legacy spacing aliases. */
 .max-w-xs { max-width: 20rem; }
 .max-w-sm { max-width: 24rem; }

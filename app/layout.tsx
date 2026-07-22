@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import IconFontLoader from "./components/IconFontLoader";
 import "./globals.css";
 
 const inter = Inter({
@@ -77,6 +78,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-surface dark:bg-slate-900 text-on-surface dark:text-slate-100 transition-colors duration-300`}
       >
+        <IconFontLoader />
         {children}
       </body>
     </html>
