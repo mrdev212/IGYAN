@@ -348,9 +348,9 @@ function FloatingContactButtons() {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
       <a
-        href="mailto:igyan.ai.team@gmail.com"
+        href="/contact"
         className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700"
-        title="Email Us"
+        title="Contact Us"
       >
         <span className="material-symbols-outlined text-[28px]">mail</span>
       </a>

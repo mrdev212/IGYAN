@@ -439,7 +439,7 @@ export default function Page() {
         <section className="py-stack-lg text-center px-gutter scroll-reveal">
             <h2 className="font-headline-lg text-headline-lg text-on-surface dark:text-white mb-8">Ready to evolve your institution?</h2>
             <a href="/contact" className="inline-flex bg-trust-blue hover:bg-[#003da1] text-white dark:bg-indigo-600 dark:hover:bg-indigo-500 px-8 py-4 rounded-full font-bold whitespace-nowrap shadow-md hover:bg-slate-800 dark:hover:bg-slate-100 transition-all">Join Insights Network</a>
-            <p className="mt-6 text-sm text-on-surface-variant dark:text-slate-400">Used by 150+ institutional leaders worldwide.</p>
+            <p className="mt-6 text-sm text-on-surface-variant dark:text-slate-400">Built with forward-thinking institutional leaders across India.</p>
         </section>
     </main>
 
@@ -450,7 +450,7 @@ export default function Page() {
 
     {/* Floating Contact Buttons */}
     <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-        <a href="mailto:igyan.ai.team@gmail.com" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700" title="Email Us">
+        <a href="/contact" className="w-14 h-14 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all border border-outline-variant/30 dark:border-slate-700" title="Contact Us">
             <span className="material-symbols-outlined text-[28px]">mail</span>
         </a>
         <a href="https://wa.me/917004201514" target="_blank" className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all" title="Chat on WhatsApp">
